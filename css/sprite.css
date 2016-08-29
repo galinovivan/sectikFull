@@ -1,0 +1,131 @@
+/*sprite adventage*/
+.sprite-adventage {
+    background-image: url('../img/sprite-adventage.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-adventage_Item_2 {
+    width: 81px;
+    height: 87px;
+    background-position: -5px -5px;
+}
+
+.sprite-adventage_item_1 {
+    width: 90px;
+    height: 90px;
+    background-position: -96px -5px;
+}
+
+.sprite-adventage_item_3 {
+    width: 70px;
+    height: 94px;
+    background-position: -196px -5px;
+}
+
+.sprite-adventage_item_4 {
+    width: 60px;
+    height: 82px;
+    background-position: -5px -109px;
+}
+/*end sprite adventage*/
+/*social sprite*/
+.sprite-social {
+    background-image: url('../img/sprite-social.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-social_fb {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -5px;
+}
+
+.sprite-social_ints {
+    width: 20px;
+    height: 20px;
+    background-position: -35px -5px;
+}
+
+.sprite-social_ond {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -35px;
+}
+
+.sprite-social_tw {
+    width: 20px;
+    height: 20px;
+    background-position: -35px -35px;
+}
+
+.sprite-social_vk {
+    width: 20px;
+    height: 20px;
+    background-position: -65px -5px;
+}
+
+.sprite-mobile-social {
+    background-image: url('../img/sprite-mobile-social.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-mob_social_fb {
+    width: 50px;
+    height: 45px;
+    background-position: -5px -5px;
+}
+
+.sprite-mob_social_inst {
+    width: 50px;
+    height: 45px;
+    background-position: -65px -5px;
+}
+
+.sprite-mob_social_odn {
+    width: 50px;
+    height: 45px;
+    background-position: -5px -60px;
+}
+
+.sprite-mob_social_tw {
+    width: 50px;
+    height: 45px;
+    background-position: -65px -60px;
+}
+
+.sprite-mob_social_vk {
+    width: 50px;
+    height: 45px;
+    background-position: -125px -5px;
+}
+
+/*end social sprite*/
+
+/*sprite contact*/
+.sprite-contact {
+    background-image: url('../img/sprite-contact.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-mail {
+    width: 48px;
+    height: 38px;
+    background-position: -5px -5px;
+}
+
+.sprite-marker {
+    width: 36px;
+    height: 48px;
+    background-position: -63px -5px;
+}
+
+.sprite-phone {
+    width: 48px;
+    height: 48px;
+    background-position: -5px -63px;
+}
+/*end sprite contact*/

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Галерея
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+    <script src="fancybox/source/jquery.fancybox.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--modal-->
+<div class="modal fade" id="callBackModal">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><img
+                        src="img/modal_close.png" alt="close"></button>
+                <h2 class="up modal-title">Оставить заявку</h2>
+
+            </div>
+            <div class="modal-body">
+                <form method="post" id="callBackForm">
+                    <input type="text" name="name" placeholder="Как вас зовут?" required>
+                    <input type="text" name="user_contact" placeholder="Почта или телефон" required>
+                                        <textarea name="messages" id="" cols="30" rows="7"
+                                                  placeholder="А вот тут то мы и напишем!"></textarea>
+                    <input type="submit" name="done" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->
+<div class="page_header hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 top_logo background_white clearfix">
+                <div class="media">
+                    <a class="media-left" href="index.html">
+                        <img src="img/header_logo.png" alt="logo" class="media-object img-responsive">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading up">
+                            Гудсептик
+                        </h3>
+                       <span class="up text_gray">
+                        Все септики здесь!
+                       </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 top_nav">
+                <ul class="list_inline">
+                    <li><a href="catalog.html" class="up">Септики</a></li>
+                    <li><a href="services.html" class="up">Услуги</a></li>
+                    <li class="active"><a href="gallery.html" class="up">Галерея</a></li>
+                    <li><a href="about.html" class="up">О компании</a></li>
+                    <li><a href="news.html" class="up">Новости</a></li>
+                    <li><a href="contact.html" class="up">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 top_contacts">
+                <i class="fa fa-phone inline" aria-hidden="true"></i>
+                <p class="inline">+7(499)703-39-00</p>
+            </div>
+            <div class="col-md-2 top_call">
+                <a class="btn_base up" href="#callBackModal" data-toggle="modal">
+                    <i class="fa fa-pencil inline" aria-hidden="true"></i>Оставить заявку
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header mobile-->
+<ul id="mobileMenu" class="visible-xs visible-sm hidden-md">
+    <li><a href="catalog.html">Септики</a></li>
+    <li><a href="services.html">Услуги</a></li>
+    <li class="active"><a href="gallery.html">Галерея</a></li>
+    <li><a href="contact.html">О компании</a></li>
+    <li><a href="news.html">Новости</a></li>
+    <li><a href="contact.html">Контакты</a></li>
+    <li id="menuCloseToggle" class="close_toggle"><a href="#"><img src="img/modal_close.png" alt="close"></a></li>
+</ul>
+<div class="header_mobile visible-xs visible-sm">
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <a id="navToggle" class="nav_mobile pull-left">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="logo_mobile clearfix">
+                <!--<a href="index.html"><img src="img/logo_mobile.png" alt="logo" class="img-responsive"></a>-->
+                <!--<div class="media">-->
+                <!--<a href="index.html" class="media-left">-->
+                <!--<img src="img/logo_mobile.png" alt="logo" class="media-object">-->
+                <!--</a>-->
+                <!--<div class="media-body">-->
+                <!--<h3 class="media-heading up">Гудсептик</h3>-->
+                <!--<span class="up text_gray">Все септики здесь!</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <div class="brand pull-left">
+                    <a href="index.html"><img src="img/logo_mobile.png" alt="logo"></a>
+                </div>
+                <div class="brand_text pull-left">
+                    <h3 class="up">
+                        Гудсептик
+                    </h3>
+                    <span class="text_gray up">
+                        Все септики здесь!
+                    </span>
+                </div>
+            </div>
+            <div class="contact_mobile pull-right">
+                <a href="#callBackModal" data-toggle="modal"><i class="fa fa-pencil"></i> </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end header-->
+<main>
+    <div class="section_capt">
+        <div class="container">
+            <div class="row">
+                <h2 class="up">Галерея</h2>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="container mobile_all_width">
+            <div class="row">
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_1.png" class="fancy_image" rel="group">
+                        <img src="img/gallery_item_1.png" alt="item" class="img-responsive">
+                    </a>
+                    <div class="item_title">
+                        <p>Установка большого септика в большую яму</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_2.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_2.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Установка септика ТОПАС 3м</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_3.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_3.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Установка септика в песчаный грунт Топас</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_4.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_4.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Установленный септик недалеко от дома</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_5.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_5.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Септик почти как квадратный, но круглый</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_6.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_6.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Септик Топас с открытой крышкой</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_1.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_1.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Установка большого септика в большую яму</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_2.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_2.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Установка септика ТОПАС 3м</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_3.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_3.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Установка септика в песчаный грунт Топас</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_4.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_4.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Установленный септик недалеко от дома</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_5.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_5.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Септик почти как квадратный, но круглый</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 gallery_item">
+                    <a href="img/gallery_item_6.png" class="fancy_image" rel="group">
+                    <img src="img/gallery_item_6.png" alt="item" class="img-responsive">
+                        </a>
+                    <div class="item_title">
+                        <p>Септик Топас с открытой крышкой copy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="pre_footer"></div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer_social hidden-xs hidden-sm">
+                <ul class="list_inline">
+                    <li class="list_inline footer_social"><a href="#"><i class="sprite-social sprite-social_fb"></i></a></li>
+                    <li class="list_inline footer_social"><a href="#"><i class="sprite-social sprite-social_vk"></i></a></li>
+                    <li class="list_inline footer_social"><a href="#"><i class="sprite-social sprite-social_tw"></i></a></li>
+                    <li class="list_inline footer_social"><a href="#"><i class="sprite-social sprite-social_ints"></i></a></li>
+                    <li class="list_inline footer_social"><a href="#"><i class="sprite-social sprite-social_ond"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 copy hidden-xs hidden-sm">
+                <p class="up">
+                    &copy; Гудсептик 2016.
+                </p>
+            </div>
+            <div class="col-xs-6 col-md-3 footer_contact">
+                <p class="up">Санкт-Петербург, пр. Большевиков, 632</p>
+                <p>+7 (499) 703-39-00</p>
+            </div>
+            <div class="col-xs-6 col-md-3 umi_copy">
+                <p class="up">
+                    Сайт создан бесплатно
+                    на 1с-UMI
+
+                </p>
+                <p class="up hidden-xs hidden-sm">
+                    Работает на UMI.CMS
+                </p>
+            </div>
+            <div class="visible-xs visible-sm footer_social col-xs-12">
+                <ul class="list_inline">
+                    <li><a href="#"><i class="sprite-mobile-social sprite-mob_social_fb"></i></a></li>
+                    <li><a href="#"><i class="sprite-mobile-social sprite-mob_social_vk"></i></a></li>
+                    <li><a href="#"><i class="sprite-mobile-social sprite-mob_social_tw"></i></a></li>
+                    <li><a href="#"><i class="sprite-mobile-social sprite-mob_social_inst"></i></a></li>
+                    <li><a href="#"><i class="sprite-mobile-social sprite-mob_social_odn"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function() {
+        $('.fancy_image').fancybox();
+    })
+</script>
+<script src="js/menu.js"></script>
+</body>
+</html>
+</body>
+</html>
